@@ -1,0 +1,19 @@
+name = "btd6-index-database-dump"
+main = "src/worker.js"
+compatibility_date = "2023-09-04"
+
+# Cron Triggers
+# Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
+# Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
+[triggers]
+crons = ["0 * * * *"] # run every hour
+
+[[d1_databases]]
+binding = "BTD6_INDEX_DB"
+database_name = "btd6index"
+database_id = "dedaa678-21d1-4d64-8f1c-a98d4936734c"
+
+[[r2_buckets]]
+binding = 'BTD6_INDEX_BACKUP'
+bucket_name = 'btd6indexbackup'
+preview_bucket_name = 'btd6indexbackuppreview'
