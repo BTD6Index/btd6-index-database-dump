@@ -1,6 +1,7 @@
 name = "btd6-index-database-dump"
 main = "src/worker.js"
 compatibility_date = "2023-09-04"
+workers_dev = false
 
 # Cron Triggers
 # Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
