@@ -6,9 +6,9 @@ export default {
 			fileName: `backups/${new Date().toISOString()}.sql`
 		});
 		const files = await env.BTD6_INDEX_BACKUP.list({prefix: 'backups'});
-		if (files.objects.length > 800) {
+		if (files.objects.length > 200) {
 			await env.BTD6_INDEX_BACKUP.delete(
-				files.objects.slice(0, files.objects.length - 800).map(obj => obj.key)
+				files.objects.slice(0, files.objects.length - 200).map(obj => obj.key)
 			);
 		}
 	},
