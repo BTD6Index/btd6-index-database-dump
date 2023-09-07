@@ -7,7 +7,7 @@ workers_dev = false
 # Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
 # Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
 [triggers]
-crons = ["0 * * * *"] # run every hour
+crons = ["0 */3 * * *"] # run every 3 hours
 
 [[d1_databases]]
 binding = "BTD6_INDEX_DB"
