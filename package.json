@@ -10,6 +10,6 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
-    "@nora-soderlund/cloudflare-d1-backups": "^0.9.22"
+    "@nora-soderlund/cloudflare-d1-backups": "https://github.com/Landmaster/cloudflare-d1-backups/tarball/escape-sqlite-master-insert"
   }
 }
